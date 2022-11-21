@@ -5,6 +5,7 @@ Most of the XSS labs online are based on PHP backend. So I developed three simpl
 **Payload** : ```alert(1)```
 ![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/dom-based-xss.png) 
 
+<br />
 
 ### Reflected XSS
 **XSStrike Query** : ```python .\xsstrike.py -u "http://localhost:3000/?txt1=a"``` \
@@ -12,6 +13,7 @@ Most of the XSS labs online are based on PHP backend. So I developed three simpl
 ![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/reflected-xss.png)
 ![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/reflected-xss-xsstrike.png)
 
+<br />
 
 ### Stored XSS
 **XSStrike Query** : ```python .\xsstrike.py -u "http://localhost:3000/?txt1=a&txt2=a" -f default``` \
@@ -19,7 +21,7 @@ Most of the XSS labs online are based on PHP backend. So I developed three simpl
 ![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/stored-xss.png)
 ![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/stored-xss-xsstrike.png)
 
-
+<br />
 
 # How to Run
 1. Install dependencies with ```npm install```
