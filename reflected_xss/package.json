@@ -1,0 +1,23 @@
+{
+  "name": "reflected_xss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "node script.js"
+  },
+  "dependencies":{
+    "express": "^4.18.2",
+    "ejs" : "^3.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Corbe30/Node-XSS-labs.git"
+  },
+  "author": "Shashank Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Corbe30/Node-XSS-labs/issues"
+  },
+  "homepage": "https://github.com/Corbe30/Node-XSS-labs#readme"
+}
