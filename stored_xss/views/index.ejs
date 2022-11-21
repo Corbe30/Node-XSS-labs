@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Students Database</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+    <center>
+        <br><br><br><br>
+        <h1>Students Database</h1>
+        <br>
+
+        <form id="myForm" method="get">
+            <label>Enrollment no:</label>
+            <input id="txt1" name="txt1"></input>
+            
+            &emsp;
+            
+            <label>Student name:</label>
+            <input id="txt2" name="txt2"></input>
+            
+            &emsp;
+            
+            <button id="btn">Add Student</button>
+
+            <p id="pickMe"></p>
+        </form>
+        <br>
+
+        <table  class="table table-bordered" style="width:50%">
+            <% for(let x in file){ %>
+                <% if(x == 'undefined') continue; %>
+                <tr>
+                    <td><%- x %></td>
+                    <td><%- file[x] %></td>
+                </tr>
+            <% } %>
+        </table>
+        <br>
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="index.js"></script>
+    </center>
+    </body>
+</html>
