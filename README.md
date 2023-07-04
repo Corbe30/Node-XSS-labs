@@ -2,6 +2,9 @@
 Most of the XSS labs online are based on PHP backend. So I developed three simple labs to demonstrate XSS vulnerabilities (DOM-based, reflected and stored) on a Node.js server. The labs are tested with XSStrike for vulnerabilities. The labs are build on Javascript, ejs, Node.js and Express.
 
 ### DOM-based XSS
+
+https://corbe30.github.io/Node-XSS-labs/dom_based_xss/
+
 **Payload** : ```alert(1)```
 ![](https://raw.githubusercontent.com/Corbe30/Node-XSS-labs/main/images/dom-based-xss.png) 
 
